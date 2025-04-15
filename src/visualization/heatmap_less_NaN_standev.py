@@ -7,8 +7,9 @@ Final Project Code - Heatmap
 
 import pandas as pd
 import plotly.express as pe
+import os
 
-file = '77_cancer_proteomes_CPTAC_itraq_standev.csv'
+file = os.path.join("..","..","data","raw","77_cancer_proteomes_CPTAC_itraq_standev.csv")
 
 data_frame = pd.read_csv(file)
 

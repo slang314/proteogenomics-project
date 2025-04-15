@@ -13,7 +13,7 @@ import csv
 import re
 import os
 
-csv_path = os.path.join("..", "..", "data", "processed", "kmeans_final.csv")
+csv_path = os.path.join("data", "processed", "kmeans_final.csv")
 data = pd.read_csv(csv_path, index_col='sample_orig.cluster_status')
 
 

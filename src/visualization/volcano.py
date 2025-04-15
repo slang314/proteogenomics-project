@@ -8,8 +8,11 @@ EN.605.662.81.FA23
 
 import pandas as pd
 import plotly.express as pe
+import os
 
-file = 'modified_names_droppednas.csv'
+
+file = os.path.join("data","processed","modified_names_droppednas.csv")
+
 data_frame = pd.read_csv(file)
 subdf = data_frame.filter(['gene_name','foldchange','neglogpval'])
 
